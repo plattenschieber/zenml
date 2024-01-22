@@ -18,7 +18,7 @@ Steps are functions annotated with the `@step` decorator. These functions have i
 
 ```python
 @step(enable_cache=False)
-def step_2(input_one: str, input_two: str) -> None:
+def step_2(input_one: str, input_two: str) -> str:
     """Combines the two strings passed in."""
     combined_str = f"{input_one} {input_two}"
     return combined_str
